@@ -159,8 +159,9 @@
 // not), using:
 //
 //     stbi_is_hdr(char *filename);
-
+#ifndef _CRT_SECURE_NO_WARNINGS
 #define _CRT_SECURE_NO_WARNINGS
+#endif
 
 #ifndef STBI_NO_STDIO
 #include <stdio.h>

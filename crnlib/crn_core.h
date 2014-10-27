@@ -21,8 +21,9 @@
       // Otherwise, we disable exceptions for a small speed boost.
       #define _HAS_EXCEPTIONS 0
    #endif
-   #define NOMINMAX
-
+   #ifndef NOMINMAX
+      #define NOMINMAX
+   #endif
    #define CRNLIB_USE_WIN32_API 1
 
    #if defined(__MINGW32__) || defined(__MINGW64__)
