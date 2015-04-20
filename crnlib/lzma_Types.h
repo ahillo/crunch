@@ -86,7 +86,7 @@ typedef int Bool;
 #define False 0
 
 
-#ifdef _MSC_VER
+#if defined(_MSC_VER) || defined(__MINGW32__) || defined(__MINGW64__)
 
 #if _MSC_VER >= 1300
 #define MY_NO_INLINE __declspec(noinline)

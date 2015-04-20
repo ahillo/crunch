@@ -28,6 +28,7 @@
 
    #if defined(__MINGW32__) || defined(__MINGW64__)
       #define CRNLIB_USE_GCC_ATOMIC_BUILTINS 1
+      #include <emmintrin.h>
    #else
       #define CRNLIB_USE_WIN32_ATOMIC_FUNCTIONS 1
    #endif
